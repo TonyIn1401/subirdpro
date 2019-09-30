@@ -1,0 +1,133 @@
+{
+    "host":{
+        "weather_url":"'http://apis.haoservice.com/weather'"
+    },
+
+    "constant":{
+        "LOGIN_STATUS_OK": "0",
+        "LOGIN_STATUS_FAIL": "1",
+
+        "TEST_STATUS_T": "1",
+        "TEST_STATUS_F":"0",
+
+        "RESULT_PATH_SCREENSHOTS": "result/screenshot",
+        "RESULT_PATH_XML": "result/xml",
+        "RESULT_PATH_HTML": "result/html",
+        "RESULT_FOLDER_NAME": "result",
+        "REPORT_TYPE": "html",
+        "REPORT_LANGUAGE": 0,
+        "ERROR_MSG": "error"
+    },
+
+    "email":{
+        "username": "zhx1990410@yeah.net",
+        "password": "Cnmd101026",
+        "smtp_server": "smtp.yeah.net",
+        "smtp_port": 25,
+        "to":[
+            "799905520@qq.com",
+            "675204348@qq.com"
+        ],
+        "cc":[
+            "zhx1990410@yeah.net"
+        ],
+        "body_type": "html",
+        "nick_name": "subirdpro",
+        "ERROR_MSG": "error occurred while runing the test suites."
+    },
+
+    "suits":[
+        {
+            "file_path": "case/api/",
+            "file":[
+                {
+                    "name":"weather_common_api",
+                    "runable": false,
+                    "class":"WeatherCommonApi",
+                    "desc":"测试天气接口",
+                    "cases":[
+                        "test_normal",
+                        "test_without_key",
+                        "test_without_cityname",
+                        "test_without_paybyvas"
+                    ]
+                },
+                {
+                    "name":"simple_test",
+                    "runable": true,
+                    "class":"SimpleTest",
+                    "desc":"简单测试加减乘除",
+                    "cases":[
+                        "test_plus",
+                        "test_subtract",
+                        "test_multiply",
+                        "test_division"
+                    ]
+                },
+                {
+                    "name":"complex_test",
+                    "runable": true,
+                    "class":"ComplexTest",
+                    "desc":"简单测试加减乘除",
+                    "cases":[
+                        "test_plus",
+                        "test_subtract",
+                        "test_multiply",
+                        "test_division"
+                    ]
+                }
+            ]
+        },
+        {
+            "file_path": "case/ui/",
+            "file":[
+                {
+                    "name":"test_demo",
+                    "runable": false,
+                    "class":"TestDemo1",
+                    "desc":"用于测试",
+                    "cases":[
+                        "test_001",
+                        "test_002"
+                    ]
+                },
+                {
+                    "name":"test_demo2",
+                    "runable": false,
+                    "class":"TestDemo1",
+                    "desc":"用于测试",
+                    "cases":[
+                        "test_001",
+                        "test_002"
+                    ]
+                }
+            ]
+        },
+        {
+            "file_path": "case/test_api/",
+            "file":[
+                {
+                    "name":"test_demo",
+                    "runable": false,
+                    "class":"TestDemo1",
+                    "desc":"用于测试",
+                    "cases":[
+                        "test_001",
+                        "test_002"
+                    ]
+                },
+                {
+                    "name":"test_demo2",
+                    "runable": false,
+                    "class":"TestDemo1",
+                    "desc":"用于测试",
+                    "cases":[
+                        "test_001",
+                        "test_002"
+                    ]
+                }
+            ]
+        }
+    ]
+ 
+}
